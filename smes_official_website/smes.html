@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sri Madheswara Enterprises & Silks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #d8d8d8;
+    }
+
+    /* Headings */
+    h1 {
+      color: #2b2a2a;
+    }
+    h1:nth-of-type(2) {
+      color:  #2b2a2a;
+    }
+
+    /* Default all h2 purple */
+    h2 {
+      color: #2e3bb6;
+    }
+
+    /* Special first h2 (Main Branch) */
+    .first-h2 {
+      color: #1b891b;
+    }
+
+    /* Special fifth h2 (Our Leadership) */
+    .fifth-h2 {
+      color:  #87878a;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #5315bf;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-sizing: border-box;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      flex: 1;
+      text-align: center;
+      padding: 14px 0;
+    }
+
+    .navbar a:hover {
+      background-color: #16a085;
+    }
+
+    /* Push content below navbar */
+    .content {
+      padding-top: 50px;
+    }
+
+    /* Top section */
+    .top-section {
+      background-color: #afc9e3;
+      padding: 20px 0 40px 0;
+    }
+
+    /* Main section */
+    .main-section {
+      background-color: #5f916c5a;
+      padding-top: 40px;
+    }
+
+    /* Shop image */
+    .shop-images img {
+      height: auto;
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+
+    /* Galleries */
+    .gallery, .section2, .section3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      padding: 0 10px;
+    }
+
+    .gallery img,
+    .section2 img,
+    .section3 img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover,
+    .section2 img:hover,
+    .section3 img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      .gallery img,
+      .section2 img,
+      .section3 img {
+        height: 200px;
+      }
+    }
+
+    /* Team section */
+    .team-section {
+      margin-top: 60px;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+    }
+
+    .team-title {
+      margin-bottom: 30px;
+    }
+
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .role-card {
+      width: 220px;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: #34495e;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .role-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .role-card a {
+      color: #4da3ff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .role-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Address section */
+    .address-section {
+      background-color: #ffeaa7;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    .address-section h2 {
+      color: #2d3436;
+    }
+
+    .address-section p {
+      font-size: 18px;
+      color: #2d3436;
+      margin: 10px 0;
+    }
+
+    .address-section a {
+      color: #0984e3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .address-section a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Online Shopping</a>
+    <a href="#">Help</a>
+    <a href="#">Contact</a>
+    <a href="#">More</a>
+  </div>
+
+  <div class="content">
+
+    <!-- Top Section -->
+    <div class="top-section">
+      <h1>Welcome to "Sri Madheswara Enterprises & Silks"</h1>
+      <h1>"ஶ்ரீ மாதேஸ்வரா எண்டர்பிரைசஸ் & சில்க்ஸ்" உங்களை அன்புடன் வரவேற்கிறது...</h1>
+      <h2 class="first-h2">SMES - Main Branch - Olagadam</h2>
+      <div class="shop-images">
+        <img src="Combined_Building_View_FullHD.jpg" alt="Main Branch Building view">
+      </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main-section">
+      <h2>Section 1: Electronics & Furnitures</h2>
+      <div class="gallery">
+        <img src="G1.jpg"><img src="G3.jpg"><img src="G2.jpg"><img src="G4.jpg">
+        <img src="G5.jpg"><img src="G6.jpg"><img src="G7.jpg"><img src="G8.jpg">
+        <img src="G9.jpg"><img src="G10.jpg"><img src="G11.jpg"><img src="G12.jpg">
+        <img src="G13.jpg"><img src="G14.jpg">
+      </div>
+
+      <h2>Section 2: Silver Items & Plastic Items</h2>
+      <div class="section2">
+        <img src="F1.jpg"><img src="F2.jpg"><img src="F3.jpg">
+        <img src="F4.jpg"><img src="F5.jpg"><img src="F6.jpg">
+      </div>
+
+      <h2>Section 3: Silks, Mattresses & Pillows</h2>
+      <div class="section3">
+        <img src="S1.jpg"><img src="S2.jpg"><img src="S3.jpg"><img src="S4.jpg">
+        <img src="S5.jpg"><img src="S6.jpg"><img src="S7.jpg"><img src="S8.jpg">
+      </div>
+
+      <!-- Team Section -->
+      <div class="team-section">
+        <h2 class="fifth-h2 team-title">Our Leadership</h2>
+        <div class="team-grid">
+          <div class="role-card">
+            <img src="lakshimi.png" alt="Head">
+            <h3>Head</h3>
+            <p>Mrs.K.Lakshimi Ammal</p>
+            <p>Ph.No: <a href="tel:9976652649">9976652649</a></p>
+          </div>
+          <div class="role-card">
+            <img src="muthusamy1.png" alt="Chairman">
+            <h3>Chairman</h3>
+            <p>Mr.K.Muthusamy</p>
+            <p>Ph.No: <a href="tel:9865587213">9865587213</a></p>
+          </div>
+          <div class="role-card">
+            <img src="raju4.png" alt="Co-chairman">
+            <h3>Co-chairman</h3>
+            <p>Mr.K.K.Raju, DIT.,</p>
+            <p>Ph.No: <a href="tel:9842463869">9842463869</a></p>
+          </div>
+          <div class="role-card">
+            <img src="siva.jpg" alt="Executive Manager">
+            <h3>Executive Manager</h3>
+            <p>Mr.M.Siva, B.Tech.(Biotechnology).,</p>
+            <p>Ph.No: <a href="tel:8220709599">8220709599</a></p>
+          </div>
+          <div class="role-card">
+            <img src="Sivam4.png" alt="General Manager">
+            <h3>General Manager</h3>
+            <p>Mr.K.R.Sivam, B.Com.(Professional Accounting).,</p>
+            <p>Ph.No: <a href="tel:9677562269">9677562269</a></p>
+          </div>
+          <div class="role-card">
+            <img src="bala.jpg" alt="Business Admin">
+            <h3>Business Administrator</h3>
+            <p>Mr.M.Bala murugan, B.B.A.,</p>
+            <p>Ph.No: <a href="tel:7339102649">7339102649</a></p>
+          </div>
+          <div class="role-card">
+            <img src="sakthi4.png" alt="Sub-Branch Head">
+            <h3>Sub-Branch Head</h3>
+            <p>Mr. Dharmalingam</p>
+            <p>Ph.No: <a href="tel:9865390668">9865390668</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Address Section -->
+      <div class="address-section">
+        <h2>Our Shop Address</h2>
+        <p>Sri Madheswara Enterprises & Silks</p>
+        <p>Olagadam Main Road, Olagadam, Erode District, Bhavani(T.K),Tamil Nadu, Pin: 638314</p>
+        <p>Contact : <a href="tel:8220709599">8220709599</a>, <a href="tel:9842483869">9842483869</a></p>
+        <p>Mail : <a href="mailto:smes.olagadam@gmail.com">smes.olagadam@gmail.com</a></p>
+        <p>
+          📍 <a href="https://goo.gl/maps/wL5ZahSTxJZxj25i7?g_st=aw" target="_blank">View on Google Maps</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
